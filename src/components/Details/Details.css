@@ -1,0 +1,21 @@
+.details{
+    background-color: rgb(204, 199, 199);
+    
+    padding: 15px 10px;
+    margin: 20px 50px;
+    border-radius: 10px;
+}
+
+#details-btn{
+    padding: 10px;
+    width: 150px;
+    background-color: gray;
+    color: black;
+    border: none;
+    border-radius: 10px;
+}
+
+#details-btn:hover{
+    background-color: black;
+    color: white;
+}

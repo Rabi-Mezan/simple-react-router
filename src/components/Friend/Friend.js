@@ -8,11 +8,8 @@ const Friend = (props) => {
     return (
         <div className='friend'>
             <h3>{name} </h3>
-            <p>Email : {email} </p>
-            <small>Website : {website}</small>
-            <br />
             <Link to={url}>
-                <button>visit me</button>
+                <button id='btn'>visit me</button>
             </Link>
         </div>
     );

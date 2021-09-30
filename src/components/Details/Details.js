@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { useHistory, useParams } from 'react-router';
+import './Details.css'
 
 const Details = () => {
 
@@ -18,14 +19,17 @@ const Details = () => {
     }
     // console.log(params)
     return (
-        <div>
+        <div >
             <h3>Details of friend No : {friendId}</h3>
-            <h4>Name : {name}</h4>
-            <p>Email : {email}</p>
-            <p>Website : {website}</p>
-            <p>Phone : {phone}</p>
-            <p>Works at  :{company?.name}</p>
-            <button onClick={handleSeeDetails}>See All Friends</button>
+            <div className='details'>
+
+                <h4>Name : {name}</h4>
+                <p>Email : {email}</p>
+                <p>Website : {website}</p>
+                <p>Phone : {phone}</p>
+                <p>Works at  :{company?.name}</p>
+            </div>
+            <button id='details-btn' onClick={handleSeeDetails}>See All Friends</button>
 
         </div>
     );
